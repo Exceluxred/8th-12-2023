@@ -28,7 +28,7 @@
         Lorem, ipsum dolor sit amet <strong>consectetur adipisicing elit</strong>consectetur adipisicing elit. Quidem quam suscipit reiciendis consequatur <em>ratione officiis</em>ratione officiis! Quam excepturi ex asperiores ut dolores eveniet exercitationem consequatur? Eaque explicabo vero deserunt iste dolorem.
     </p>
     <p>
-        Lorem, ipsum dolor sit amet <strong>consectetur adipisicing elit</strong>consectetur adipisicing elit. Quidem quam suscipit <a href="http://www.google.com" target="_blank" >go to google</a> reiciendis consequatur <em>ratione officiis</em>ratione officiis! Quam excepturi ex asperiores ut dolores eveniet exercitationem consequatur? Eaque explicabo vero deserunt iste dolorem.
+        Lorem, ipsum dolor sit amet <strong>consectetur adipisicing elit</strong>consectetur adipisicing elit. Quidem quam suscipit <a rel="noopener" href="http://www.google.com" target="_blank" >go to google</a> reiciendis consequatur <em>ratione officiis</em>ratione officiis! Quam excepturi ex asperiores ut dolores eveniet exercitationem consequatur? Eaque explicabo vero deserunt iste dolorem.
     </p>
     <!-- Lintings -->
     <ul>
@@ -44,5 +44,77 @@
         <li></li>
         <li></li>
     </ol>
+    <!-- tables in html -->
+    <table border="">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>sex</th>
+                <th>address</th>
+                <th>serial number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mr John</td>
+                <td>john@gmail.com</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Mr John</td>
+                <td>john@gmail.com</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Mr John</td>
+                <td>john@gmail.com</td>
+                <td>35</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br><br>
+
+<!-- form -->
+    <form action="" method="">
+        <div>
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name">
+        </div>
+       <div>
+        <label for="Email">Email
+            <input type="email" name="Email" id="Email">
+        </label>
+       </div>
+       
+       <div>
+        <label for="message">message</label>
+        <textarea name="message" id="message"></textarea>
+       </div>
+       <div>
+        <label for="Gender">Gender</label>
+        <select name="Gender" id="Gender">
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+        </select>
+       </div>
+       <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="18" max="50">
+       </div>
+       <div>
+        <label for="DOB">Date of Birth</label>
+        <input  type="date" name="dob" id="dob" title="dob">
+       </div>
+       
+       <input type="submit" value="Submit">
+        
+    </form>
+
+
+    <br><br><br><br><br><br><br><br>
 </body>
 </html>
