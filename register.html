@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+</head>
+<body>
+    <center>
+        <h1>Registration</h1>
+    </center>
+    <form action="result.html" method="Get" enctype="multipart/form-data">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Name" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age">
+        </div>
+        <div>
+            <label for="date">Birthdate</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <div>
+            <h1>favourite friuts</h1>
+            <div>
+                <label 
+                for="banana">Banana</label>
+                <input title="tel" type="checkbox" name="banana" id="favourite foodn">
+            </div>
+            <div>
+                <label for="Apple">Apple</label>
+                <input title="tel"type="checkbox" name="Apple" id="favourite food">
+            </div>
+        </div>
+
+        <div>
+            <h1>Gender</h1>
+            <div>
+                <label for="male">Male</label>
+                <input title="tel" type="radio" name="Gender" id="Male">
+            </div>
+            <div>
+                <label for="Female">Female</label>
+                <input type="radio" name="Gender" id="Female">
+            </div>
+            <div>
+                <label for="other">LGBTQ</label>
+                <input type="radio" name="Gender" id="other">
+            </div>
+        </div>
+        <div>
+            <h2>Eye Color</h2>
+            <label for="eyeColor">Eye Color</label>
+            <select name="eyeColor" id="eyeColor">
+                <option value="Green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="Brown">Brown</option>
+            </select>
+        </div>
+        <div>
+            <label for="Bio">Bio</label>
+            <textarea name="Bio" id="Bio" >tell us about you</textarea>
+        </div>
+        <input type="hidden" name="hidden" value="THIS IS FOR THE PROGRAMMER ONLY">
+        <div>
+            <h1>RESUME</h1>
+            <label for="file">file</label>
+            <input type="file" name="file" id="file">
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input title="tel" type="tel" name="tel" id="tel">
+        </div>
+        <div>
+            <h1>folio</h1>
+            <label for="url">Url</label>
+            <input type="url" name="url" id="url">
+        </div>
+        <div>
+            <label for="Color">Color</label>
+            <input title="tel" type="color" name="color" id="color">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
