@@ -5,16 +5,45 @@
     property:value;
 } */
 
-.container{
+.container {
     background-color: #f4f4f4;
     color: #555;
     font-size: 16px;
     font-weight: normal;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6em;
-    margin: 0;
+    margin: 15px;
 }
-.box-1{
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: aqua;
+}
+
+/* a:visited{
+    color: chartreuse;
+} */
+
+.button {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 10px 15px;
+}
+
+.button:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.box-1 {
     background-color: #333;
     color: #fff;
 
@@ -26,9 +55,49 @@
     border: 5px red solid;
 
     padding: 20px;
-    
+
     margin-top: 60px;
 
     margin: 20px 0;
 }
 
+.box-1 h1 {
+    color: chartreuse;
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+}
+
+.box-2 {
+
+    border: 3px dotted #ccc;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.categories{
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h2{
+    text-align: center;
+}
+
+.categories ul{
+    padding: 0 ;
+    padding-left:20px;
+    list-style: none;
+    list-style: square;
+}
+
+.categories li{
+    padding-bottom: 6px ;
+    border-bottom: solid 1px #333;
+    list-style-image: url(../);
+}
