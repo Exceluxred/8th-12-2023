@@ -41,3 +41,21 @@
 # ```
 
 # Replace `'YOUR_BOT_TOKEN'` with the token obtained from BotFather and customize the username and keyword(s) to match your requirements. This code will send a direct message to the user if they post a message containing the specified keyword(s).
+
+from telethon import TelegramClient
+
+# Replace with your own API ID and API Hash
+api_id = '23841507'
+api_hash = '541a69b3329264ba3cbe1f94e75b7e52'
+phone_number = '+2347084441982'
+
+client = TelegramClient('session_name', api_id, api_hash)
+
+async def main():
+    await client.start(phone_number)
+    async for dialog in client.iter_dialogs():
+        if dialog.is_group or dialog.is_channel:
+            print(f'{dialog.name} has ID {dialog.id}')
+
+with client:
+    client.loop.run_until_complete(main())
